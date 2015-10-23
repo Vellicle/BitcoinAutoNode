@@ -26,9 +26,9 @@ echo "######### Creating User"
 sudo su -c "useradd bitnode -s /bin/bash -m -U"
 
 echo "######## Setting up Bitcoind"
-sudo -u bitnode mkdir .bitcoin
+sudo -H -i -u bitnode mkdir .bitcoin
 config=".bitcoin/bitcoin.conf"
-sudo -u binode touch $config
+sudo -H -i -u bitnode touch $config
 echo "server=1" > $config
 echo "daemon=1" >> $config
 randUser=`< /dev/urandom tr -dc A-Za-z0-9 | head -c30`
