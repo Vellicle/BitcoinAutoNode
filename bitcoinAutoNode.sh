@@ -9,10 +9,10 @@ mkdir /tmp/bitcoinsrc && cd /tmp/bitcoinsrc
 
 echo "########## Grabbing Source Code"
 git clone https://github.com/bitcoin/bitcoin
+cd /tmp/bitcoinsrc/bitcoin
 git checkout v0.11.1
 
 echo "########## Preparing Build"
-cd /tmp/bitcoinsrc/bitcoin
 ./autogen.sh
 ./configure --disable-wallet --with-cli --without-gui
 
