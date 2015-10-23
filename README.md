@@ -10,7 +10,7 @@ It has been tested on Ubuntu Server 14.04 and 15.04. It is intended for use only
 One Liner
 ---------
 
-    wget https://raw.github.com/OverlordQ/BitcoinAutoNode/master/bitcoinAutoNode.sh ; sudo bash bitcoinAutoNode.sh
+    wget -q -O - https://raw.github.com/OverlordQ/BitcoinAutoNode/master/bitcoinAutoNode.sh | sudo bash
 
 You should really check out the code before running that though.
 
