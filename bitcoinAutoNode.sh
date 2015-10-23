@@ -37,5 +37,3 @@ echo "rpcuser=$randUser" >> $config
 echo "rpcpassword=$randPass" >> $config
 
 echo "sudo -u bitnode bitcoind -uacomment='Infohaus'" >> /etc/rc.local
-
-udo -u bitnode -i bitcoind -uacomment='Infohaus'
