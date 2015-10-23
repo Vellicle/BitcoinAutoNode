@@ -23,7 +23,7 @@ echo "######### Installing Bitcoind"
 sudo make install
 
 echo "######### Creating User"
-sudo su -c "useradd bitnode -s /bin/bash -m -g bitnode"
+sudo su -c "useradd bitnode -s /bin/bash -m -U"
 
 echo "######## Setting up Bitcoind"
 sudo -u bitnode mkdir .bitcoin
